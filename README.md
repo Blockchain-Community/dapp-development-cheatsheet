@@ -37,9 +37,9 @@
 
 <h3 id="setting-backend-api-and-metamask">1. Setting Backend API and Metamask 🦊</h3>
 <p>
-In order for a software and/or application to interact with the blockchain (i.e. read data and/or send transactions to the network), it must connect to an blockchain node. For this purpose, every blockchain client implements the <a href="https://medium.com/@ConsenSys/blockchain-underpinnings-2c43ba03ecc9#:~:text=JSON%2DRPC%20is%20a%20data,commands%20and%20listening%20to%20responses.">JSON-RPC</a> specification. It's bit technical i know but having a surface knowledge really helps.🌊
+In order for a software and/or application to interact with the blockchain (i.e. read data and/or send transactions to the network), it must connect to an blockchain node. For this purpose, every blockchain client implements the <a target="_blank" href="https://medium.com/@ConsenSys/blockchain-underpinnings-2c43ba03ecc9#:~:text=JSON%2DRPC%20is%20a%20data,commands%20and%20listening%20to%20responses.">JSON-RPC</a> specification. It's bit technical i know but having a surface knowledge really helps.🌊
 <br/><br/>
-If you want to use a specific programming language to connect with an Ethereum node, roll your own solution <b>but</b> several convenience libraries exist within the ecosystem that make this much easier like really much easier. Here are some lists of <a href="./Documentation/BackendAPI.md">Backend API's</a>.
+If you want to use a specific programming language to connect with an Ethereum node, roll your own solution <b>but</b> several convenience libraries exist within the ecosystem that make this much easier like really much easier. Here are some lists of <a target="_blank" href="./Documentation/BackendAPI.md">Backend API's</a>.
 
 </p>
 
@@ -51,13 +51,13 @@ I've used Alchemy API in this whole project but you can consider any one of the 
     <li>
         <b>Step 1: Create your Alchemy account</b>
         <p>
-        You will need an Alchemy account in order to deploy and make requests to your smart contract. If you don't already have one, you can sign up for free here:<a href="https://dashboard.alchemyapi.io/signup/">https://dashboard.alchemyapi.io/signup/</a>
+        You will need an Alchemy account in order to deploy and make requests to your smart contract. If you don't already have one, you can sign up for free here:<a target="_blank" href="https://dashboard.alchemyapi.io/signup/">https://dashboard.alchemyapi.io/signup/</a>
         </p>
     </li>
     <li>
         <b>Step 2: Create a Metamask Account</b>
         <p>
-        Metamask is used to manage your Ethereum account address. When you are creating an account, or if you already have an account, make sure to switch over to the "Ropsten Test Network" in the upper right. You can find the extension for metamask <a href="https://metamask.io/">here.</a><br/><br/>
+        Metamask is used to manage your Ethereum account address. When you are creating an account, or if you already have an account, make sure to switch over to the "Ropsten Test Network" in the upper right. You can find the extension for metamask <a target="_blank" href="https://metamask.io/">here.</a><br/><br/>
         <img src="./images/metamask.png"/>
         </p>
     </li>
@@ -88,7 +88,7 @@ Once you've created an Alchemy account, you can generate an API key by creating 
 
 <h3 id="download-truffle">3. Download Truffle 🎯</h3>
 <p>
-<a href="https://www.trufflesuite.com/docs/truffle/overview">Truffle</a> is a development environment, testing network, and asset pipeline for Ethereum that we will use to build, compile, and deploy our smart contract. To download Truffle, you can install <a href="https://nodejs.org">NodeJS</a> and paste the following command in your terminal:
+<a target="_blank" href="https://www.trufflesuite.com/docs/truffle/overview">Truffle</a> is a development environment, testing network, and asset pipeline for Ethereum that we will use to build, compile, and deploy our smart contract. To download Truffle, you can install <a target="_blank" href="https://nodejs.org">NodeJS</a> and paste the following command in your terminal:
 </p>
 <code>npm install -g truffle</code><br/>
 Make sure you install Node.js in your system first.😃
@@ -149,7 +149,7 @@ First, define the <code>HDWalletProvider</code> object in your configuration fil
 </li>
 <br/>
 <li>
-Next, provide a reference to your mnemonic or seed phrase from Metamask. to get your seed reference from Metamask follow these <a href="./Documentation/MetamaskSeedPhrase.md">instructions</a>. Once you have your mnemonic, we recommend storing it safely in an environment file (we will also add our API key here).<br/><br/>
+Next, provide a reference to your mnemonic or seed phrase from Metamask. to get your seed reference from Metamask follow these <a target="_blank" href="./Documentation/MetamaskSeedPhrase.md">instructions</a>. Once you have your mnemonic, we recommend storing it safely in an environment file (we will also add our API key here).<br/><br/>
 First, install the dotenv package.<br/>
 <code>npm install dotenv --save</code><br/><br/>
 Next add the following line to your <code>truffle-config.js</code> file.
@@ -297,7 +297,7 @@ Deploying 'HelloWorld'
 > Total deployments: 2
 > Final cost: 0.00812422 ETH
 ```
-Once this is finished without errors you will have deployed the contract, check it out on <a href="https://ropsten.etherscan.io/">https://ropsten.etherscan.io/</a> by searching for your `transaction hash` or `contract address`!! 🎉
+Once this is finished without errors you will have deployed the contract, check it out on <a target="_blank" href="https://ropsten.etherscan.io/">https://ropsten.etherscan.io/</a> by searching for your `transaction hash` or `contract address`!! 🎉
 
 If you head over to your Alchemy dashboard and click on the app details for your app you can see that there are requests flowing through. These requests are made in order to fulfill the deployment of your smart contract.
 
@@ -308,7 +308,7 @@ If you head over to your Alchemy dashboard and click on the app details for your
 <h3 id="install-web3">1. Install web3 💻</h3>
 We need install a web3 package in order to interact with the Ethereum blockchain. We'll be using `Alchemy web3` in this example, however, there are a handful of other `web3 providers` you can choose from.
 
-For the fronend part, I usually use <a href="https://reactjs.org/">React.js</a>. So, initialize the React project in your parent directory by:<br/>
+For the fronend part, I usually use <a target="_blank" href="https://reactjs.org/">React.js</a>. So, initialize the React project in your parent directory by:<br/>
 `npx create-react-app app-name`
 
 Now, change the directory to react app by:
@@ -526,6 +526,6 @@ Ethereum Mainnet Address: 0x02F24C6cd355646eE0d46Fc8730CcaCB94A76538
 
 <hr/>
 <h3>Find me on:</h3>
-<a href="https://www.facebook.com/sangya.sherpa.2001"><img width="40px" src="https://cdn.icon-icons.com/icons2/1826/PNG/512/4202110facebooklogosocialsocialmedia-115707_115594.png"/> </a>
-<a href="https://www.instagram.com/_.sangya._/"><img width="40px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/600px-Instagram_icon.png"/> </a>
-<a href="https://www.linkedin.com/in/laxman-rai-1bab6518b/"><img width="40px" src="https://cdn.worldvectorlogo.com/logos/linkedin-icon-2.svg"/> </a>
+<a target="_blank" href="https://www.facebook.com/sangya.sherpa.2001"><img width="40px" src="https://cdn.icon-icons.com/icons2/1826/PNG/512/4202110facebooklogosocialsocialmedia-115707_115594.png"/> </a>
+<a target="_blank" href="https://www.instagram.com/_.sangya._/"><img width="40px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/600px-Instagram_icon.png"/> </a>
+<a target="_blank" href="https://www.linkedin.com/in/laxman-rai-1bab6518b/"><img width="40px" src="https://cdn.worldvectorlogo.com/logos/linkedin-icon-2.svg"/> </a>

@@ -31,6 +31,6 @@ Ethereum Mainnet Address: 0x02F24C6cd355646eE0d46Fc8730CcaCB94A76538
 
 <hr/>
 <h3>Find me on:</h3>
-<a href="https://www.facebook.com/sangya.sherpa.2001"><img width="40px" src="https://cdn.icon-icons.com/icons2/1826/PNG/512/4202110facebooklogosocialsocialmedia-115707_115594.png"/> </a>
-<a href="https://www.instagram.com/_.sangya._/"><img width="40px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/600px-Instagram_icon.png"/> </a>
-<a href="https://www.linkedin.com/in/laxman-rai-1bab6518b/"><img width="40px" src="https://cdn.worldvectorlogo.com/logos/linkedin-icon-2.svg"/> </a>
+<a target="_blank" href="https://www.facebook.com/sangya.sherpa.2001"><img width="40px" src="https://cdn.icon-icons.com/icons2/1826/PNG/512/4202110facebooklogosocialsocialmedia-115707_115594.png"/> </a>
+<a target="_blank" href="https://www.instagram.com/_.sangya._/"><img width="40px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/600px-Instagram_icon.png"/> </a>
+<a target="_blank" href="https://www.linkedin.com/in/laxman-rai-1bab6518b/"><img width="40px" src="https://cdn.worldvectorlogo.com/logos/linkedin-icon-2.svg"/> </a>
