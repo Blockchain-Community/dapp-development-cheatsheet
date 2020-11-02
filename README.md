@@ -78,7 +78,7 @@ Once you've created an Alchemy account, you can generate an API key by creating 
     Name your app "Your App Name", offer a short description, select "Staging" for the Environment, and choose "Ropsten" for your network,
     </li>
     <li>
-    Click "Create app" and thats it! Your app should appear in the table below
+    Click "Create app" and thats it! Your app should appear in the table below<br/>
     <img src="./images/app1.png"/>
     <img src="./images/app2.png"/>
     </li>
@@ -109,7 +109,7 @@ cd project-name
 <li>
 Get boilerplate files for creating and deploying smart contracts by "intializing":
 <code>truffle init</code><br/><br/>
-Once this operation is completed, you'll now have a project structure with the following items:
+Once this operation is completed, you'll now have a project structure with the following items:<br/>
 <img src="./images/project-struct.png"/>
 
 </li>
