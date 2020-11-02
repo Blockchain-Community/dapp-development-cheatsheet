@@ -35,7 +35,7 @@
 
 ## Backend Part 💻
 
-<h3 id="setting-backend-api-and-metamask">1. Setting Backend API and Metamask</h3>
+<h3 id="setting-backend-api-and-metamask">1. Setting Backend API and Metamask 🦊</h3>
 <p>
 In order for a software and/or application to interact with the blockchain (i.e. read data and/or send transactions to the network), it must connect to an blockchain node. For this purpose, every blockchain client implements the <a href="https://medium.com/@ConsenSys/blockchain-underpinnings-2c43ba03ecc9#:~:text=JSON%2DRPC%20is%20a%20data,commands%20and%20listening%20to%20responses.">JSON-RPC</a> specification. It's bit technical i know but having a surface knowledge really helps.🌊
 <br/><br/>
@@ -57,7 +57,7 @@ I've used Alchemy API in this whole project but you can consider any one of the 
     <li>
         <b>Step 2: Create a Metamask Account</b>
         <p>
-        Metamask is used to manage your Ethereum account address. When you are creating an account, or if you already have an account, make sure to switch over to the "Ropsten Test Network" in the upper right. You can find the extension for metamask <a href="https://metamask.io/">here.</a><br/>
+        Metamask is used to manage your Ethereum account address. When you are creating an account, or if you already have an account, make sure to switch over to the "Ropsten Test Network" in the upper right. You can find the extension for metamask <a href="https://metamask.io/">here.</a><br/><br/>
         <img src="./images/metamask.png"/>
         </p>
     </li>
@@ -65,20 +65,20 @@ I've used Alchemy API in this whole project but you can consider any one of the 
 
 <hr/>
 
-<h3 id="create-an-app-with-backend-api">2. Create an App with Backend API</h3>
+<h3 id="create-an-app-with-backend-api">2. Create an App with Backend API 📱</h3>
 <p>
 Once you've created an Alchemy account, you can generate an API key by creating an app.🔑
 </p>
 
 <ol>
     <li>
-        Navigate to the "Create App" page in your Alchemy Dashboard by hovering over "Apps" in the nav bar and clicking "Create App",
+        Navigate to the `Create App` page in your Alchemy Dashboard by hovering over `Apps` in the nav bar and clicking `Create App`,
     </li>
     <li>
-    Name your app "Your App Name", offer a short description, select "Staging" for the Environment, and choose "Ropsten" for your network,
+    Name your app `Your App Name`, offer a short description, select `Staging` for the Environment, and choose `Ropsten` for your network,
     </li>
     <li>
-    Click "Create app" and thats it! Your app should appear in the table below<br/>
+    Click `Create app` and thats it! Your app should appear in the table below<br/><br/>
     <img src="./images/app1.png"/>
     <img src="./images/app2.png"/>
     </li>
@@ -90,7 +90,8 @@ Once you've created an Alchemy account, you can generate an API key by creating 
 <p>
 <a href="https://www.trufflesuite.com/docs/truffle/overview">Truffle</a> is a development environment, testing network, and asset pipeline for Ethereum that we will use to build, compile, and deploy our smart contract. To download Truffle, you can install <a href="https://nodejs.org">NodeJS</a> and paste the following command in your terminal:
 </p>
-<code>npm install -g truffle</code>
+<code>npm install -g truffle</code><br/>
+Make sure you install Node.js in your system first.😃
 
 <hr/>
 
@@ -106,12 +107,12 @@ mkdir project-name
 cd project-name
 </code>
 </li>
+<br/>
 <li>
 Get boilerplate files for creating and deploying smart contracts by "intializing":
-<code>truffle init</code><br/><br/>
+<code>truffle init</code><br/>
 Once this operation is completed, you'll now have a project structure with the following items:<br/>
 <img src="./images/project-struct.png"/>
-
 </li>
 </ol>
 <hr/>
@@ -126,7 +127,7 @@ Truffle HDWallet provider is an easy way to configure network connection to ethe
 
 <h3 id="write-your-contract">6. Write your Contract 📑</h3>
 <p>
-Open up the project folder in your favorite editor. Smart contracts are written in a language called <b>Solidity</b>.
+Open up the project folder in your favorite editor. Smart contracts are written in a language called <b>Solidity</b>💻.
 </p>
 
 <ol>
@@ -141,12 +142,12 @@ Navigate to the "contracts" folder and create a new file called <code>ContractNa
 <p>
 The next step is to edit your <code>truffle-config.js</code> file to use <code>HDWalletProvider</code> and provide all the necessary configuration for deploying to ropsten.
 </p>
-
 <ol>
 <li>
 First, define the <code>HDWalletProvider</code> object in your configuration file. Add this line at the top of your <code>truffle-config.js</code> file:<br/>
 <code>const HDWalletProvider = require("@truffle/hdwallet-provider");</code>
 </li>
+<br/>
 <li>
 Next, provide a reference to your mnemonic or seed phrase from Metamask. to get your seed reference from Metamask follow these <a href="./Documentation/MetamaskSeedPhrase.md">instructions</a>. Once you have your mnemonic, we recommend storing it safely in an environment file (we will also add our API key here).<br/><br/>
 First, install the dotenv package.<br/>
@@ -200,7 +201,7 @@ module.exports = {
 
 <h3 id="compile-your-smart-contract">8. Compile your Smart Contract 💻</h3>
 <p>
-To compile a Truffle project, navigate to the root of the directory where the project is located and then type the following command:<br/><br/>
+To compile a Truffle project, navigate to the root of the directory where the project is located and then type the following command:<br/>
 <code>
 truffle compile
 </code>
@@ -509,3 +510,20 @@ const setData = async (data) => {
 }
 ```
 Now the metamask will popup saying if you want to confirm or reject the request.
+
+<hr/>
+
+<h2>Loved my work?😀</h2>
+1. Don't forget to fork the repo,<br/>
+2. Star if you really liked the work. ⭐<br/>
+3. Buy me a coffee ☕<br/>
+
+`ESewa / Khalti / Topup: +9779849092326`
+
+`Ethereum Mainnet Address: 0x02F24C6cd355646eE0d46Fc8730CcaCB94A76538 or 0xbb4dAe43487aE815DB0adBb4685D002a07F61db8`
+
+<hr/>
+<h3>Find me on:</h3>
+<a href="https://www.facebook.com/sangya.sherpa.2001"><img width="40px" src="https://cdn.icon-icons.com/icons2/1826/PNG/512/4202110facebooklogosocialsocialmedia-115707_115594.png"/> </a>
+<a href="https://www.instagram.com/_.sangya._/"><img width="40px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/600px-Instagram_icon.png"/> </a>
+<a href="https://www.linkedin.com/in/laxman-rai-1bab6518b/"><img width="40px" src="https://cdn.worldvectorlogo.com/logos/linkedin-icon-2.svg"/> </a>
