@@ -194,7 +194,6 @@ module.exports = {
         }
     }
 }
-
 ```
 
 <hr/>
@@ -215,13 +214,11 @@ Navigate to <code>migrations/</code>, then add <code>2_deploy_contracts.js</code
 </p>
 
 ```
-
 const YourContract = artifacts.require("YourContract");
 
 module.exports = function (deployer) {
 deployer.deploy(YourContract);
 };
-
 ```
 
 <hr/>
@@ -238,7 +235,6 @@ You should then see a response that looks similar to the following:
 </p>
 
 ```
-
 # Starting migrations...
 
 > Network name: 'ropsten'
@@ -299,7 +295,6 @@ Deploying 'HelloWorld'
 
 > Total deployments: 2
 > Final cost: 0.00812422 ETH
-
 ```
 Once this is finished without errors you will have deployed the contract, check it out on <a href="https://ropsten.etherscan.io/">https://ropsten.etherscan.io/</a> by searching for your `transaction hash` or `contract address`!! 🎉
 
@@ -327,14 +322,13 @@ Now, install the web3 package here by:
 Hurray, you've made to the almost end of making dapp.🎉
 
 Now, open your `App.js` inside `src/` folder and clear out the unwanted things inside the `<div className="App">`. It should look like:
-```
 
+```
 import React from "react"
 
 default function App(){
 return <div className="App"></div>
 }
-
 ```
 
 The following steps are strictly important so follow patiently.
@@ -342,26 +336,24 @@ The following steps are strictly important so follow patiently.
 2. Now add the json file in `App.js` by adding line at the top of file:
 `import contract from "./build/contracts/YourContract.json";`
 3. Import web3 in your `App.js` in top line by:
-```
 
+```
 import Web3 from "web3";
 import { createAlchemyWeb3 } from "@alch/alchemy-web3";
-
 ```
 4. Import hook to your app
 update `import React from 'react` by `import React, { useState, useEffect } from "react";`
 5. Initialize the basic state variables that is required to intialize the method for contract.
-```
 
+```
 const [account, setAccount] = useState("");
 const [newContract, setNewContract] = useState(null);
 const [loading, setLoading] = useState(true);
-
 ```
+
 6. Since, Interaction to ethereum blockchain is done through wallet, we need to make sure the wallet is installed in your browser so add the following code inside the function and above the return.
 
 ```
-
 async function loadWeb3() {
 var { ethereum, web3 } = window;
 
@@ -379,7 +371,6 @@ var { ethereum, web3 } = window;
     setAccount(accounts[0]);
 
 }
-
 ```
 
 You might see other resources where the wallet are being connected differently, but few things deprecated earlier and soon going to be ended. So this is new and stable way.
@@ -387,7 +378,6 @@ You might see other resources where the wallet are being connected differently, 
 7. Fill the empty states with contract and wallet address by adding following code.
 
 ```
-
 async function loadBlockchainData() {
 // setup contract
 const API_KEY =
@@ -404,7 +394,6 @@ const alchWeb3 = createAlchemyWeb3(API_KEY);
     setLoading(false);
 
 }
-
 ```
 
 Things to note here:
@@ -415,20 +404,17 @@ Things to note here:
 Finally add the final code to get your base ready for the dapp.
 
 ```
-
 useEffect(() => {
 (async function fetchData() {
 await loadWeb3();
 await loadBlockchainData();
 })();
 }, []);
-
 ```
 
 Your final code must look like this
 
 ```
-
 import React, { useState, useEffect } from "react";
 import Web3 from "web3";
 import { createAlchemyWeb3 } from "@alch/alchemy-web3";
@@ -488,7 +474,6 @@ return (
 <div className="App"></div>
 );
 }
-
 ```
 
 <hr/>
