@@ -308,7 +308,7 @@ If you head over to your Alchemy dashboard and click on the app details for your
 <h3 id="install-web3">1. Install web3 💻</h3>
 We need install a web3 package in order to interact with the Ethereum blockchain. We'll be using `Alchemy web3` in this example, however, there are a handful of other `web3 providers` you can choose from.
 
-For the fronend part, I usually use <a href="https://reactjs.org/">React.js</a>. So, initialize the React project in your parent directory by:
+For the fronend part, I usually use <a href="https://reactjs.org/">React.js</a>. So, initialize the React project in your parent directory by:<br/>
 `npx create-react-app app-name`
 
 Now, change the directory to react app by:
@@ -517,10 +517,11 @@ Now the metamask will popup saying if you want to confirm or reject the request.
 1. Don't forget to fork the repo,<br/>
 2. Star if you really liked the work. ⭐<br/>
 3. Buy me a coffee ☕<br/>
-
-`ESewa / Khalti / Topup: +9779849092326`
-
-`Ethereum Mainnet Address: 0x02F24C6cd355646eE0d46Fc8730CcaCB94A76538 or 0xbb4dAe43487aE815DB0adBb4685D002a07F61db8`
+```
+ESewa / Khalti / Topup: +9779849092326
+Ethereum Mainnet Address: 0x02F24C6cd355646eE0d46Fc8730CcaCB94A76538
+0xbb4dAe43487aE815DB0adBb4685D002a07F61db8
+```
 
 <hr/>
 <h3>Find me on:</h3>
