@@ -12,7 +12,7 @@
 
 ### Table of Contents 📑
 
-<h5>Backend Part 💻</h5>
+<h3>Backend Part 💻</h3>
 
 - [Setting Backend API & Metamask](#setting-backend-api-and-metamask)
 - [Create an App with Backend API](#create-an-app-with-backend-api)
@@ -25,7 +25,7 @@
 - [Setting migration for contract deployment](#setting-migration)
 - [Deploying contract to blockchain "Ropsten Test Network in my case"](#deploy-contract)
 
-<h5>Frontend Part 💪</h5>
+<h3>Frontend Part 💪</h3>
 
 - [Install web3](#install-web3)
 - [Initializing method to interact with Smart Contract](#initialize-contract-interaction)
@@ -35,7 +35,7 @@
 
 ## Backend Part 💻
 
-<h5 id="setting-backend-api-and-metamask">1. Setting Backend API and Metamask</h5>
+<h3 id="setting-backend-api-and-metamask">1. Setting Backend API and Metamask</h3>
 <p>
 In order for a software and/or application to interact with the blockchain (i.e. read data and/or send transactions to the network), it must connect to an blockchain node. For this purpose, every blockchain client implements the <a href="https://medium.com/@ConsenSys/blockchain-underpinnings-2c43ba03ecc9#:~:text=JSON%2DRPC%20is%20a%20data,commands%20and%20listening%20to%20responses.">JSON-RPC</a> specification. It's bit technical i know but having a surface knowledge really helps.🌊
 <br/><br/>
@@ -65,7 +65,7 @@ I've used Alchemy API in this whole project but you can consider any one of the 
 
 <hr/>
 
-<h5 id="create-an-app-with-backend-api">2. Create an App with Backend API</h5>
+<h3 id="create-an-app-with-backend-api">2. Create an App with Backend API</h3>
 <p>
 Once you've created an Alchemy account, you can generate an API key by creating an app.🔑
 </p>
@@ -86,7 +86,7 @@ Once you've created an Alchemy account, you can generate an API key by creating 
 
 <hr/>
 
-<h5 id="download-truffle">3. Download Truffle 🎯</h5>
+<h3 id="download-truffle">3. Download Truffle 🎯</h3>
 <p>
 <a href="https://www.trufflesuite.com/docs/truffle/overview">Truffle</a> is a development environment, testing network, and asset pipeline for Ethereum that we will use to build, compile, and deploy our smart contract. To download Truffle, you can install <a href="https://nodejs.org">NodeJS</a> and paste the following command in your terminal:
 </p>
@@ -94,7 +94,7 @@ Once you've created an Alchemy account, you can generate an API key by creating 
 
 <hr/>
 
-<h5 id="create-a-truffle-project">4. Create a Truffle project ✔</h5>
+<h3 id="create-a-truffle-project">4. Create a Truffle project ✔</h3>
 
 <ol>
 <li>
@@ -116,7 +116,7 @@ Once this operation is completed, you'll now have a project structure with the f
 </ol>
 <hr/>
 
-<h5 id="install-hdwalletProvider">5. Install HDWalletProvider 👜</h5>
+<h3 id="install-hdwalletProvider">5. Install HDWalletProvider 👜</h3>
 <p>
 Truffle HDWallet provider is an easy way to configure network connection to ethereum through a provider like Alchemy, Infura. You can install it using the following command:<br/>
 <code>npm install @truffle/hdwallet-provider</code>
@@ -124,7 +124,7 @@ Truffle HDWallet provider is an easy way to configure network connection to ethe
 
 <hr/>
 
-<h5 id="write-your-contract">6. Write your Contract 📑</h5>
+<h3 id="write-your-contract">6. Write your Contract 📑</h3>
 <p>
 Open up the project folder in your favorite editor. Smart contracts are written in a language called <b>Solidity</b>.
 </p>
@@ -137,7 +137,7 @@ Navigate to the "contracts" folder and create a new file called <code>ContractNa
 
 <hr/>
 
-<h5 id="configure-your-project">7. Configure your Project 📐</h5>
+<h3 id="configure-your-project">7. Configure your Project 📐</h3>
 <p>
 The next step is to edit your <code>truffle-config.js</code> file to use <code>HDWalletProvider</code> and provide all the necessary configuration for deploying to ropsten.
 </p>
@@ -199,7 +199,7 @@ module.exports = {
 
 <hr/>
 
-<h5 id="compile-your-smart-contract">8. Compile your Smart Contract 💻</h5>
+<h3 id="compile-your-smart-contract">8. Compile your Smart Contract 💻</h3>
 <p>
 To compile a Truffle project, navigate to the root of the directory where the project is located and then type the following command:<br/><br/>
 <code>
@@ -209,7 +209,7 @@ truffle compile
 
 <hr/>
 
-<h5 id="setting-migration">9. Setting migration for contract deployment 🚀</h5>
+<h3 id="setting-migration">9. Setting migration for contract deployment 🚀</h3>
 <p>
 Navigate to <code>migrations/</code>, then add <code>2_deploy_contracts.js</code> where we'll add the config to deploy the contract.
 </p>
@@ -226,9 +226,9 @@ deployer.deploy(YourContract);
 
 <hr/>
 
-<h5 id="deploy-contract">
+<h3 id="deploy-contract">
 10. Deploying contract to blockchain "Ropsten Test Network in my case" 🌊
-</h5>
+</h3>
 <p>
 In order to deploy our smart contract to the Ethereum network, we will use truffle's migrations which are JavaScript files that help you deploy contracts to the Ethereum network.
 To run your migrations, run the following:<br/>
@@ -309,7 +309,7 @@ If you head over to your Alchemy dashboard and click on the app details for your
 
 ## Frontend Part 💪
 
-<h5 id="install-web3">1. Install web3 💻</h5>
+<h3 id="install-web3">1. Install web3 💻</h3>
 We need install a web3 package in order to interact with the Ethereum blockchain. We'll be using `Alchemy web3` in this example, however, there are a handful of other `web3 providers` you can choose from.
 
 For the fronend part, I usually use <a href="https://reactjs.org/">React.js</a>. So, initialize the React project in your parent directory by:
@@ -323,7 +323,7 @@ Now, install the web3 package here by:
 
 <hr/>
 
-<h5 id="initialize-contract-interaction">2. Initializing method to interact with Smart Contract 📑</h5>
+<h3 id="initialize-contract-interaction">2. Initializing method to interact with Smart Contract 📑</h3>
 Hurray, you've made to the almost end of making dapp.🎉
 
 Now, open your `App.js` inside `src/` folder and clear out the unwanted things inside the `<div className="App">`. It should look like:
@@ -493,7 +493,7 @@ return (
 
 <hr/>
 
-<h5 id="interact-method">2. Calling and Sending method to Interact 😎</h5>
+<h3 id="interact-method">2. Calling and Sending method to Interact 😎</h3>
 Sighss, Finally our base has completed it's just a matter of few lines of code to interact with methods.😀
 
 There are two ways to interact with contract through api i.e. call() and send() which is similar to post request and get request in REST API.
